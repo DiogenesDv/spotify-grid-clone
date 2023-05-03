@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    height: 100vh;
+}
+
+.item-header{
+    grid-area: header;
+    background-color: #0c0a0a;
+}
+.item-menu{
+    grid-area: menu;
+    background-color: #1e1d1d;
+}
+.item-section{
+    grid-area: section;
+    background-color:#515251;
+}
+.item-footer{
+    grid-area: footer;
+    background:  linear-gradient(to right, #ae2896, #509bf5);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:'header menu menu menu menu menu'
+    'header section section section section section'
+    'footer footer footer footer footer footer';
+    gap: 0px;
+    padding: 1px;
+}
+
+/******Estilização header lateral******/
+
+.item-header{
+    display: flex;
+    flex-direction: column;
+    height:93vh;
+}
+.logo-menu{
+    padding: 20px 0 0 20px;
+}
+.item-menu-ul-1, .item-menu-ul-2{
+    padding: 20px 0 0;
+    line-height: 40px;
+}
+.item-menu-ul-1 li a, .item-menu-ul-2 li a{
+    text-decoration: none;
+    color: #b7b5b5;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    padding-bottom: 10px;    
+}
+.item-menu-ul-1 li a .fa, .item-menu-ul-2 li a .fa{
+    padding-right: 10px;
+}
+.item-menu-ul-1 li a:hover,
+.item-menu-ul-1 li a:active,
+.item-menu-ul-1 li a:focus,
+.item-menu-ul-2 li a:hover,
+.item-menu-ul-2 li a:active,
+.item-menu-ul-2 li a:focus{
+    color: #fff;
+    font-size: 18.2px;
+    transition: 0.5s;
+}
+
+.item-menu-cookies{
+    height: 150px;
+    padding: 20px;
+    position: absolute;/*Para fixar na posicao do bottom*/
+    bottom: 80px;/*Posicao*/
+}
+.item-menu-cookies .item-cookies{
+    color: #ffffff;
+    text-decoration: none;
+}
+.item-cookies:hover{
+    text-decoration: underline;
+}
+.item-cookies{
+    margin-bottom:50px;
+}
+.item-menu-cookies .fas{
+    margin-top: 40px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.item-menu-cookies .fas:hover{
+    border: 4px solid #fff;
+    box-shadow: 0px 0px 5px #fff;
+    transition: 0.2s;
+}
+
+/**Estilização do menu topo**/
+.item-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
+.btn-anterior-proximo{
+    margin-left: 20px;
+}
+.item-menu .fa{
+    color: #fff;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    background: #0e0e0e;
+    border: #272727;
+}
+
+.link-e-button-inscrever-entrar{
+    margin-right: 20px;
+}
+.link-e-button-inscrever-entrar .entrar{
+    font-size: 18px;
+    color: #d1cece;
+    text-decoration: none;
+    padding-right: 10px;
+}
+.link-e-button-inscrever-entrar .entrar:hover,
+.link-e-button-inscrever-entrar .entrar:active,
+.link-e-button-inscrever-entrar .entrarhover{
+    font-size: 18.3px;
+    transition: 0.5s;
+    color: #fff;    
+}
+
+.link-e-button-inscrever-entrar .inscrever a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.link-e-button-inscrever-entrar .inscrever:hover{
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 5px #fff;
+    transition: 0.2s;
+}
+.link-e-button-inscrever-entrar .inscrever{
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
