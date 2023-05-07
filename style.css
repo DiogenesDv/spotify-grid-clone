@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 main{
     height: 100vh;   
@@ -13,7 +14,7 @@ main{
 .item-header{
     grid-area: header;
     background-color: #070707;
-    width: 25vw;
+    width: 22vw;
 }
 .item-menu{
     grid-area: menu;
@@ -22,11 +23,12 @@ main{
 .item-section{
     grid-area: section;
     background-color:#232323;
-    width: 74vw;
+    width: 80vw;
 }
 .item-footer{
     grid-area: footer;
     background:  linear-gradient(to right, #ae2896, #509bf5);
+    width: 100vw;
 }
 
 .grid-container{
@@ -79,7 +81,7 @@ main{
     height: 150px;
     padding: 20px;
     position: fixed;/*Para fixar na posicao do bottom*/
-    bottom: 30px;/*Posicao*/
+    bottom: 85px;/*Posicao*/
 }
 .item-menu-cookies .item-cookies{
     color: #ffffff;
@@ -90,20 +92,24 @@ main{
 }
 .item-cookies{
     margin-bottom:50px;
+    font-size: 10px;
 }
 .item-menu-cookies .fas{
     margin-top: 40px;
-    padding: 10px 10px;
+    padding: 6px 5px;
     border-radius: 40px;
-    font-size: 11px;
+    font-size: 9px;
     background: transparent;
     color: #fff;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     cursor: pointer;
 }
+.item-menu-cookies-span{
+    text-transform: none;
+}
 .item-menu-cookies .fas:hover{
-    border: 4px solid #fff;
-    box-shadow: 0px 0px 5px #fff;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 2px #fff;
     transition: 0.2s;
 }
 
@@ -113,6 +119,7 @@ main{
     justify-content: space-between;
     align-items: center;
     height: 7vh;
+    margin-right: 30px;
 }
 .btn-anterior-proximo{
     margin-left: 20px;
@@ -171,6 +178,7 @@ main{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    margin-right: 30px;
 }
 .texto-btn-link a{
     color: #fff;
@@ -194,7 +202,7 @@ main{
     background: rgb(28, 27, 27);
     display: flex;
     flex-direction: column;
-    width: 170px;
+    width: 160px;
     padding: 12px;
     margin-right: 15px;
     margin-bottom: 15px;
@@ -229,8 +237,53 @@ main{
     transition: all ease 0.6s;
 }
 .hr-linha-fim hr{
+    width: 95%;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 130px;
+    border: 1px solid rgb(54, 53, 53);/*OBS: Só muda a cor do hr se colocar apropiedade border, pois ele é uma borda encurtada*/
+}
+
+/**********Footer*********/
+.item-footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.item-footer-h6-p{
+    color: #fff;
+}
+.item-footer-h6-p h6{
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+.item-footer-h6-p p{
+    font-weight:500;
+    line-height: 25px;
+}
+.item-footer-button button{
+    width: 142px;
+    padding: 20px 1px;
+    border-radius: 30px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+.item-footer-button button a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+.item-footer-button button:hover{
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 5px #fff;
+    transition: 0.2s;
 }
 
 
